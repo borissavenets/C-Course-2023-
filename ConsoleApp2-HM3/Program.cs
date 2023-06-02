@@ -2,85 +2,85 @@
 {
     private static void Main(string[] args)
     {
-        ////hw3
-        ////- Write a C# program to check two given integers and return true if one is negative and one is positive.
-        
-        //Console.WriteLine("Input 1st integer");
-        //var a = Console.ReadLine();
-        //int a_conv = Convert.ToInt32(a);
+        //hw3
+        //- Write a C# program to check two given integers and return true if one is negative and one is positive.
 
-        //Console.WriteLine("Input 2nd integer");
-        //var b = Console.ReadLine();
-        //int b_conv = Convert.ToInt32(b);
+        Console.WriteLine("Input 1st integer");
+        var a = Console.ReadLine();
+        int a_conv = Convert.ToInt32(a);
 
-        //if (a_conv < 0 && b_conv > 0 || b_conv < 0 && a_conv > 0)
-        //{
-        //    Console.WriteLine($"{a_conv} {b_conv} Check if one is negative and one is positive: true ");
-        //}
+        Console.WriteLine("Input 2nd integer");
+        var b = Console.ReadLine();
+        int b_conv = Convert.ToInt32(b);
 
-        //else
-        //{
-        //    Console.WriteLine($"{a_conv} {b_conv} Check if one is negative and one is positive: false ");
-        //}
+        if (a_conv < 0 && b_conv > 0 || b_conv < 0 && a_conv > 0)
+        {
+            Console.WriteLine($"{a_conv} {b_conv} Check if one is negative and one is positive: true ");
+        }
 
-        ////- Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.
+        else
+        {
+            Console.WriteLine($"{a_conv} {b_conv} Check if one is negative and one is positive: false ");
+        }
 
-        //if (a_conv == 20 || b_conv == 20 || a_conv + b_conv == 20) 
-        //{
-        //    Console.WriteLine($"{a_conv} {b_conv} If one of the integer is 20 or if their sum is 20: true ");
-        //}
+        //- Write a C# program to check the sum of the two given integers and return true if one of the integer is 20 or if their sum is 20.
 
-        //else
-        //{
-        //    Console.WriteLine($"{a_conv} {b_conv} If one of the integer is 20 or if their sum is 20: false ");
-        //}
+        if (a_conv == 20 || b_conv == 20 || a_conv + b_conv == 20)
+        {
+            Console.WriteLine($"{a_conv} {b_conv} If one of the integer is 20 or if their sum is 20: true ");
+        }
 
-        ////var res = (a_conv == 20 || b_conv == 20 || a_conv + b_conv == 20) ? "test 1" : "test 2";
-        ////Console.WriteLine(res);
+        else
+        {
+            Console.WriteLine($"{a_conv} {b_conv} If one of the integer is 20 or if their sum is 20: false ");
+        }
 
-        ////- Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
-        //int c=1;
-        //while (c <= 99 )
-        //{
-        //    if (c%2 != 0)
-        //    {
-        //        Console.WriteLine(c);
-        //    }
-        //        c++;
-        //}
+        //var res = (a_conv == 20 || b_conv == 20 || a_conv + b_conv == 20) ? "test 1" : "test 2";
+        //Console.WriteLine(res);
 
-        ////- Write a C# program to compute the sum of the first 500 prime numbers.
-        //int n = 500;
-        //int sum = 0;
-        //int count = 0;
-        //int number = 2;
+        //- Write a C# program to print the odd numbers from 1 to 99. Prints one number per line.
+        int c = 1;
+        while (c <= 99)
+        {
+            if (c % 2 != 0)
+            {
+                Console.WriteLine(c);
+            }
+            c++;
+        }
 
-        //while (count < n)
-        //{
-        //    bool isPrime = true;
+        //- Write a C# program to compute the sum of the first 500 prime numbers.
+        int n = 500;
+        int sum = 0;
+        int count = 0;
+        int number = 2;
 
-        //    for (int i = 2; i * i <= number; i++)
-        //    {
-        //        if (number % i == 0)
-        //        {
-        //            isPrime = false;
-        //            break;
-        //        }
-        //    }
+        while (count < n)
+        {
+            bool isPrime = true;
 
-        //    if (isPrime)
-        //    {
-        //        sum += number;
-        //        count++;
-        //    }
+            for (int i = 2; i * i <= number; i++)
+            {
+                if (number % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
 
-        //    number++;
-        //}
+            if (isPrime)
+            {
+                sum += number;
+                count++;
+            }
 
-        //Console.WriteLine("The sum of the first {0} prime numbers is: {1}", n, sum);
+            number++;
+        }
+
+        Console.WriteLine("The sum of the first {0} prime numbers is: {1}", n, sum);
 
 
-        //- Write a C# program and compute the sum of the digits of an integer.
+        -Write a C# program and compute the sum of the digits of an integer.
 
         Console.WriteLine(" Input a number(integer):");
         var enteredNumber = Console.ReadLine();
