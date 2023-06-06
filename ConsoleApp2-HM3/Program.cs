@@ -80,7 +80,7 @@
         Console.WriteLine("The sum of the first {0} prime numbers is: {1}", n, sum);
 
 
-        -Write a C# program and compute the sum of the digits of an integer.
+        //-Write a C# program and compute the sum of the digits of an integer.
 
         Console.WriteLine(" Input a number(integer):");
         var enteredNumber = Console.ReadLine();
